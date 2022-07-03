@@ -1,5 +1,8 @@
+.. _macOS_install:
+
+=================================
 macOS Tutorial (Big Sur - 11.5.1)
-*********************************
+=================================
 
 Welcome to the beginner installation tutorial for domain deployment on your personal macOS machine!
 
@@ -200,19 +203,14 @@ Step 5: Install Necessary Python Packages
 
   .. code-block:: bash
 
-      pip install hagrid==0.1.9
-
-* Step 5.5: If you are using Apple MacOS M1 device, install SciPy from a prelease channel in Conda
-
-  .. code-block:: bash
-
-      pip install --pre -i https://pypi.anaconda.org/scipy-wheels-nightly/simple scipy
-
-* Step 5.6: Install the latest version of PySyft (latest pre-release)
+      pip install hagrid
+      
+* Step 5.5: Install Syft
 
   .. code-block:: bash
-
+  
       pip install syft
+
 
 Step 6: Install Docker
 ======================
@@ -302,7 +300,7 @@ Step 8: Test Hagrid (optional)
 
   .. code-block:: bash
 
-      conda activate syft
+      conda activate syft_env
       hagrid launch test
 
   Wait several minutes. You should see LOTS of logging. The logging will occasionally hang during downloads. If your
@@ -322,7 +320,7 @@ Step 8: Test Hagrid (optional)
 
   .. code-block:: bash
 
-      conda activate syft
+      conda activate syft_env
       jupyter lab
 
   A new browser window should open up.
